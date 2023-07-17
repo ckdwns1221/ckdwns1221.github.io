@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nanum+Pen+Script&family=Roboto+Slab&display=swap');
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.isamanroo-font{
+    font-family: 'GongGothicMedium', sans-serif;
+}
+.anton-font{
+    font-family: 'Anton', sans-serif;
+}
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.sbaggro-font {
+    font-family: 'SBAggroB', sans-serif;
+}
+body {
+    background-color: #0f0f0f;
+}
+.display-container {
+    max-width: 415px;   
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+}
+.main{
+    position: relative;
+    min-height: 100vh;
+}
+.main video{
+    position: absolute; /* abosulte는 부모가 있거나 relative로 지정한게 있어야함. */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1; /* z-index로 순서 정할 수 있음 */
+}
+.glitch {
+position: relative;
+font-size: 100px;
+font-weight: 700;
+line-height: 1.2;
+color: #fff;
+letter-spacing: 6px;
+z-index: 1;
+text-shadow: 2px 2px 5px #0f0f0f;
+}
+
+.glitch:before {
+content: attr(data-glitch);
+position: absolute;
+top: 0;
+left: -2px;
+width: 100%;
+color: #fff;
+background-color: rgba(33, 33, 33, 0);
+overflow: hidden;
+clip: rect(0, 900px, 0, 0);
+animation: noise-before 3s infinite linear alternate-reverse;
+}
+
+.glitch:after {
+content: attr(data-glitch);
+position: absolute;
+top: 0;
+left: 2px;
+width: 100%;
+color: #fff;
+background-color: rgba(33, 33, 33, 0);
+overflow: hidden;
+clip: rect(0, 900px, 0, 0);
+animation: noise-after 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-before {
+0% {
+    clip: rect(61px, 9999px, 52px, 0);
+}
+
+5% {
+    clip: rect(33px, 9999px, 144px, 0);
+}
+
+10% {
+    clip: rect(121px, 9999px, 115px, 0);
+}
+
+15% {
+    clip: rect(144px, 9999px, 162px, 0);
+}
+
+20% {
+    clip: rect(62px, 9999px, 180px, 0);
+}
+
+25% {
+    clip: rect(34px, 9999px, 42px, 0);
+}
+
+30% {
+    clip: rect(147px, 9999px, 179px, 0);
+}
+
+35% {
+    clip: rect(99px, 9999px, 63px, 0);
+}
+
+40% {
+    clip: rect(188px, 9999px, 122px, 0);
+}
+
+45% {
+    clip: rect(154px, 9999px, 14px, 0);
+}
+
+50% {
+    clip: rect(63px, 9999px, 37px, 0);
+}
+
+55% {
+    clip: rect(161px, 9999px, 147px, 0);
+}
+
+60% {
+    clip: rect(109px, 9999px, 175px, 0);
+}
+
+65% {
+    clip: rect(157px, 9999px, 88px, 0);
+}
+
+70% {
+    clip: rect(173px, 9999px, 131px, 0);
+}
+
+75% {
+    clip: rect(62px, 9999px, 70px, 0);
+}
+
+80% {
+    clip: rect(24px, 9999px, 153px, 0);
+}
+
+85% {
+    clip: rect(138px, 9999px, 40px, 0);
+}
+
+90% {
+    clip: rect(79px, 9999px, 136px, 0);
+}
+
+95% {
+    clip: rect(25px, 9999px, 34px, 0);
+}
+
+100% {
+    clip: rect(173px, 9999px, 166px, 0);
+}
+}
+
+@keyframes noise-after {
+0% {
+    clip: rect(26px, 9999px, 33px, 0);
+}
+
+5% {
+    clip: rect(140px, 9999px, 198px, 0);
+}
+
+10% {
+    clip: rect(184px, 9999px, 89px, 0);
+}
+
+15% {
+    clip: rect(121px, 9999px, 6px, 0);
+}
+
+20% {
+    clip: rect(181px, 9999px, 99px, 0);
+}
+
+25% {
+    clip: rect(154px, 9999px, 133px, 0);
+}
+
+30% {
+    clip: rect(134px, 9999px, 169px, 0);
+}
+
+35% {
+    clip: rect(26px, 9999px, 187px, 0);
+}
+
+40% {
+    clip: rect(147px, 9999px, 137px, 0);
+}
+
+45% {
+    clip: rect(31px, 9999px, 52px, 0);
+}
+
+50% {
+    clip: rect(191px, 9999px, 109px, 0);
+}
+
+55% {
+    clip: rect(74px, 9999px, 54px, 0);
+}
+
+60% {
+    clip: rect(145px, 9999px, 75px, 0);
+}
+
+65% {
+    clip: rect(153px, 9999px, 198px, 0);
+}
+
+70% {
+    clip: rect(99px, 9999px, 136px, 0);
+}
+
+75% {
+    clip: rect(118px, 9999px, 192px, 0);
+}
+
+80% {
+    clip: rect(1px, 9999px, 83px, 0);
+}
+
+85% {
+    clip: rect(145px, 9999px, 98px, 0);
+}
+
+90% {
+    clip: rect(121px, 9999px, 154px, 0);
+}
+
+95% {
+    clip: rect(156px, 9999px, 44px, 0);
+}
+
+100% {
+    clip: rect(67px, 9999px, 122px, 0);
+}
+}
+
+.subtitle {
+    text-shadow: 2px 2px 5px #0f0f0f;
+}
+.btn-main {
+    position: relative;
+    z-index: 1;
+    text-decoration-line: none;
+    filter: drop-shadow(0px 0px 8px #ffffff);
+}
+.btn-main-waterisland-in{
+    color: #6bc6dd;
+    background: #000000;
+    width: 98%;
+    height: 100%;
+    clip-path: polygon(9% 0%, 100% 0%, 100% 66%, 91% 100%, 0% 100%, 0% 34%);/* clip-path는 보더가 안먹음 */
+}
+.btn-main-waterisland-out{
+    position: absolute;
+    background: #6bc6dd;
+    width: 100%;
+    height: 110%;
+    z-index: -1;
+    clip-path: polygon(9% 0%, 100% 0%, 100% 66%, 91% 100%, 0% 100%, 0% 34%);
+}
+
+.btn-main-waterisland-in:hover{
+    color: #ffffff;
+    background-color: #55d6f6;
+    width: 98%;
+    height: 100%;
+    clip-path: polygon(9% 0%, 100% 0%, 100% 66%, 91% 100%, 0% 100%, 0% 34%);
+    transition: 0.3s;
+}
+.btn-main-romanticisland-in{
+    color: #c62b6b;
+    background: #000000;
+    width: 98%;
+    height: 100%;
+    clip-path: polygon(9% 0%, 100% 0%, 100% 66%, 91% 100%, 0% 100%, 0% 34%);/* clip-path는 보더가 안먹음 */
+}
+.btn-main-romanticisland-out{
+    position: absolute;
+    background: #c62b6b;
+    width: 100%;
+    height: 110%;
+    z-index: -1;
+    clip-path: polygon(9% 0%, 100% 0%, 100% 66%, 91% 100%, 0% 100%, 0% 34%);
+}
+
+.btn-main-romanticisland-in:hover{
+    color: #ffffff;
+    background-color: #e43a81;
+    width: 98%;
+    height: 100%;
+    clip-path: polygon(9% 0%, 100% 0%, 100% 66%, 91% 100%, 0% 100%, 0% 34%);
+    transition: 0.3s;
+}
+.btn-main-gardenisland-in{
+    color: #287e3a;
+    background: #000000;
+    width: 98%;
+    height: 100%;
+    clip-path: polygon(9% 0%, 100% 0%, 100% 66%, 91% 100%, 0% 100%, 0% 34%);/* clip-path는 보더가 안먹음 */
+}
+.btn-main-gardenisland-out{
+    position: absolute;
+    background: #287e3a;
+    width: 100%;
+    height: 110%;
+    z-index: -1;
+    clip-path: polygon(9% 0%, 100% 0%, 100% 66%, 91% 100%, 0% 100%, 0% 34%);
+}
+
+.btn-main-gardenisland-in:hover{
+    color: #ffffff;
+    background-color: #29a844;
+    width: 98%;
+    height: 100%;
+    clip-path: polygon(9% 0%, 100% 0%, 100% 66%, 91% 100%, 0% 100%, 0% 34%);
+    transition: 0.3s;
+}
+
+.wayto-water-island{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    margin-bottom: 35px;
+}
+.wayto-water-island p {
+    font-size: 12px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #000000;
+    margin-bottom: 5px;
+}
+.wayto-water-island img{
+    width: auto;
+    height: 40px;
+    filter: drop-shadow(2px 2px 5px #000000);
+}
+
+/* waterisland-section */
+.waterisland-section {
+    background-color: #000;
+    position: relative;
+    min-height: 100vh;
+    padding-top: 100px;
+    z-index: 0;
+    overflow: hidden;
+}
+.waterisland-section .island-title {
+    font-size: 30px;
+    color: #000;
+    margin-bottom: -30px;
+    -webkit-text-stroke: 1px #6bc6dd;
+}
+.waterisland-section .poolus-title {
+    font-size: 100px;
+    color: #6bc6dd;
+}
+.right-wave-line {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 10px;
+    right: -65px;
+    z-index: -1;
+}
+
+.left-wave-line {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    bottom: 50px;
+    left: -65px;
+    z-index: -1;
+}
+.waterisland-contents{
+    font-size: 15px;
+    color: #6bc6dd;
+    text-shadow: 2px 2px 5px black;
+}
+.see-detail-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.see-detail-button button {
+    padding: 10px !important;
+    margin-bottom: 0 !important;
+    background-color: #6cc7df;
+    border-radius: 10px !important;
+    border: none;
+    font-size: 20px;
+    font-family: SBAggroB;
+    width: 200px;
+    color: black;
+    filter: drop-shadow(2px 2px 5px #000000);
+}
+.waterisland-img{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+}
+.wave-and-tree{
+    height: auto;
+    max-width: 100%;
+}   
+.wayto-romantic-island {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+}
+.wayto-romantic-island p {
+    font-size: 12px;
+    font-weight: 900px;
+    color: #000;
+/*  text-shadow: 2px 2px 5px #000000;*/
+    margin-bottom: 5px;
+}
+.wayto-romantic-island img {
+    width: auto;
+    height: 40px;
+    filter: drop-shadow(2px 2px 5px #000000);
+}
+
+/* romanticisland-section */
+.romanticisland-section{
+    background-color: #9fd5f4;
+    position: relative;
+    min-height: 100vh;
+    padding-top: 100px;
+    z-index: 0;
+    overflow: hidden;
+}
+.romanticisland-section .island-title {
+    font-size: 30px;
+    font-weight: 900;
+    color: transparent;
+    margin-bottom: -30px;
+    -webkit-text-stroke: 1px #c62b6b;
+    position: relative;
+}
+.romanticisland-section .poolus-title {
+    font-size: 100px;
+    color: #c62b6b;
+    margin: 0;
+}
+.cloud-1 {
+    height: auto;
+    position: absolute;
+    width: 155px;
+    z-index: -1;
+    left: 0;
+    top: 70px;
+}
+.cloud-2 {
+    height: auto;
+    position: absolute;
+    width: 155px;
+    z-index: -1;
+    right: -35px;
+    top: 270px;
+}
+.cloud-3 {
+    height: auto;
+    position: absolute;
+    width: 155px;
+    z-index: -1;
+    left: -25px;
+    top: 470px;
+}
+.romanticisland-hashtag span {
+    background-color: #c62b6b;
+    color: #9fd5f4;
+    font-size: 12px;
+}
+.romanticisland-contents {
+    color: #c62b6b;
+    font-size: 15px;
+    margin-top: 30px;
+}
+.heart-group {
+    position: relative;
+}
+.heart-1 {
+    height: auto;
+    left: 50px;
+    position: absolute;
+    width: 100px;
+}
+.heart-2 {
+    height: auto;
+    position: absolute;
+    width: 50px;
+    right: 100px;
+}
+.heart-3 {
+    right: 55px;
+    top: 40px;
+    height: auto;
+    position: absolute;
+    width: 50px;
+}
+.romanticisland-img {
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+.romanticisland-img .img-fluid {
+    height: auto;
+    max-width: 100%;
+}
+.wayto-garden-island {
+    bottom: 0;
+    left: 50%;
+    margin-bottom: 20px;
+    position: absolute;
+    transform: translateX(-50%);
+}
+.wayto-garden-island p {
+    color: #c62b6b;
+    font-size: 12px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.wayto-garden-island img {
+    height: 40px;
+    width: auto;
+}
+
+/* gardenisland-section */
+.gardenisland-section {
+    background-color: #fef5e8;
+    min-height: 100vh;
+    padding-top: 100px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+.gardenisland-section .island-title {
+    font-size: 30px;
+    font-weight: 900;
+    color: transparent;
+    margin-bottom: -30px;
+    -webkit-text-stroke: 1px #287e3a;
+}
+.gardenisland-section .poolus-title {
+    font-size: 100px;
+    color: #287e3a;
+}
+.garden-cloud-1 {
+    height: auto;
+    position: absolute;
+    width: 155px;
+    z-index: -1;
+    left: 0;
+    top: 30px;
+}
+.garden-cloud-2 {
+    height: auto;
+    position: absolute;
+    width: 155px;
+    z-index: -1;
+    right: -35px;
+    top: 150px;
+}
+.garden-cloud-3 {
+    height: auto;
+    left: -25px;
+    position: absolute;
+    top: 265px;
+    width: 155px;
+    z-index: -1;
+}
+.garden-cloud-4 {
+    height: auto;
+    position: absolute;
+    right: 10px;
+    top: 440px;
+    width: 100px;
+    z-index: -1;
+}
+.gardenisland-contents {
+    color: #287e3a;
+    font-size: 15px;
+    margin-top: 30px;
+}
+.see-booth-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.see-booth-button button {
+    padding: 10px !important;
+    margin-bottom: 0 !important;
+    background-color: #287e3a;
+    border-radius: 10px !important;
+    border: none;
+    font-size: 20px;
+    font-family: SBAggroB;
+    width: 200px;
+    color: white;
+    filter: drop-shadow(2px 2px 5px #000000);
+}
+.gardenisland-img{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+}
+.gardenisland-img .img-fluid{
+    height: auto;
+    max-width: 100%;
+}  
