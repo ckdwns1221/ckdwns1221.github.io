@@ -1,0 +1,96 @@
+body {
+    background-color: #0f0f0f;
+}
+.display-container {
+    max-width: 415px;   
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    background-image: url('./artist_img/waterback.png');
+    background-size: cover;
+}
+@font-face {
+    font-family: 'LOTTERIADDAG';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIADDAG.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.lotteria-fonts {
+    font-family: 'LOTTERIADDAG', sans-serif;
+}
+.day-button div {
+    border-bottom: 5px solid black;
+    font-size: 20px;
+    color: white;
+}
+.day-button .DayUnact {
+    border-bottom: 5px solid rgb(0,0,0,0.5);
+}
+.day-button a {
+    text-decoration: none;
+    color: inherit;
+}
+nav {
+    width: 415px;
+    margin: 0 auto;
+    background-image: url('./artist_img/waterback.png');
+    background-size: cover;
+}
+.artist-section {
+    padding-top: 120px;
+}
+.artist-section .left-img {
+    width: 230px;
+    margin-right: 80px;
+}
+.artist-section .right-img {
+    width: 230px;
+    margin-left: 80px;
+}
+.artist {
+    position: relative;
+}
+.left-artist-name {
+    font-size: 60px;
+    position: absolute;
+    right: 38px;
+    bottom: 63px;
+    text-shadow: 2px 2px #6bc6dd;
+}
+.left-artist-time {
+    position: absolute;
+    right: 40px;
+    bottom: 37px;
+    font-size: 30px;
+    text-shadow: 2px 2px #6bc6dd;
+}
+.right-artist-name {
+    font-size: 60px;
+    position: absolute;
+    left: 38px;
+    bottom: 63px;
+    text-shadow: 2px 2px #6bc6dd;
+}
+.right-artist-time {
+    position: absolute;
+    left: 40px;
+    bottom: 37px;
+    font-size: 30px;
+    text-shadow: 2px 2px #6bc6dd;
+}
+.artist-name-bolsa {
+    font-size: 45px;
+    position: absolute;
+    left: 38px;
+    bottom: 63px;
+    text-shadow: 2px 2px #6bc6dd;
+}
+.artist .artist-time {
+    position: absolute;
+    left: 40px;
+    bottom: 37px;
+    font-size: 30px;
+    text-shadow: 2px 2px #6bc6dd;
+}
+
+

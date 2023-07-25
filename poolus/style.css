@@ -43,40 +43,40 @@ body {
     z-index: -1; /* z-index로 순서 정할 수 있음 */
 }
 .glitch {
-position: relative;
-font-size: 100px;
-font-weight: 700;
-line-height: 1.2;
-color: #fff;
-letter-spacing: 6px;
-z-index: 1;
-text-shadow: 2px 2px 5px #0f0f0f;
+    position: relative;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: 6px;
+    z-index: 1;
+    text-shadow: 2px 2px 5px #0f0f0f;
 }
 
 .glitch:before {
-content: attr(data-glitch);
-position: absolute;
-top: 0;
-left: -2px;
-width: 100%;
-color: #fff;
-background-color: rgba(33, 33, 33, 0);
-overflow: hidden;
-clip: rect(0, 900px, 0, 0);
-animation: noise-before 3s infinite linear alternate-reverse;
+    content: attr(data-glitch);
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 100%;
+    color: #fff;
+    background-color: rgba(33, 33, 33, 0);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-before 3s infinite linear alternate-reverse;
 }
 
 .glitch:after {
-content: attr(data-glitch);
-position: absolute;
-top: 0;
-left: 2px;
-width: 100%;
-color: #fff;
-background-color: rgba(33, 33, 33, 0);
-overflow: hidden;
-clip: rect(0, 900px, 0, 0);
-animation: noise-after 2s infinite linear alternate-reverse;
+    content: attr(data-glitch);
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 100%;
+    color: #fff;
+    background-color: rgba(33, 33, 33, 0);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-after 2s infinite linear alternate-reverse;
 }
 
 @keyframes noise-before {
@@ -374,7 +374,7 @@ animation: noise-after 2s infinite linear alternate-reverse;
     position: absolute;
     width: 100px;
     height: auto;
-    top: 10px;
+    top: 110px;
     right: -65px;
     z-index: -1;
 }
@@ -383,7 +383,7 @@ animation: noise-after 2s infinite linear alternate-reverse;
     position: absolute;
     width: 100px;
     height: auto;
-    bottom: 50px;
+    top: 200px;
     left: -65px;
     z-index: -1;
 }
@@ -475,7 +475,7 @@ animation: noise-after 2s infinite linear alternate-reverse;
     width: 155px;
     z-index: -1;
     right: -35px;
-    top: 270px;
+    top: 250px;
 }
 .cloud-3 {
     height: auto;
@@ -483,7 +483,7 @@ animation: noise-after 2s infinite linear alternate-reverse;
     width: 155px;
     z-index: -1;
     left: -25px;
-    top: 470px;
+    top: 450px;
 }
 .romanticisland-hashtag span {
     background-color: #c62b6b;

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nanum+Pen+Script&family=Roboto+Slab&display=swap');
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+}
+.isamanroo-font{
+    font-family: 'GongGothicMedium', sans-serif;
+}
+.anton-font{
+    font-family: 'Anton', sans-serif;
+}
+.sbaggro1-font {
+    font-family: 'SBAggroB', sans-serif;
+}
+.sbaggro-font {
+    font-family: 'SBAggroB', sans-serif;
+}
+body {
+    background-color: #0f0f0f;
+}
+.display-container {
+    box-shadow: 0 0 15px 0 hsla(0, 0%, 100%, .75);
+    max-width: 415px;   
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    padding-top: 100px;
+    z-index: 0;
+    background-color: #fef5e8;
+    overflow-x: hidden;
+}
+.boothmain {
+    color: #287e3a;
+}
+.gardenisland {
+    font-size: 30px;
+    color: #fef5e8;
+    margin-bottom: -30px;
+    -webkit-text-stroke: 2px #287e3a;
+}
+.subtitle{
+    font-size: 100px;
+    color: #287e3a;
+}
+.sku-gardenisland {
+    background-color: hsla(0, 0%, 100%, .6);
+    border-radius: 15px;
+    width: 300;
+    font-size: 18px;
+    padding: 10px;
+    position: relative;
+}
+.mapinfo {
+    font-size: 13px;
+    font-weight: 700px;
+    margin-top: 20px;
+}
+label {
+    font-size: 15px;
+    margin-top: 15px;
+}
+.searchform {
+    border:  2px solid #287e3a;
+    margin: 0 auto 20px;
+    width: 200px;
+    position: relative;
+    flex-direction: row; /* 기본값, 아이템이 좌에서 우로 흐름. */
+}
+input {
+    background: none;
+    border: none;
+    width: 170px;
+}
+button {
+    background-color: transparent !important;
+    border: none;
+    width: 300px;
+    margin: 20px;
+}
+.booth{
+    background-color: white;
+    border-radius: 15px;
+}
+.boothimg{
+    border-radius: 15px 0 0 15px;
+    margin-right: 10px;
+}
+.boothinfo{
+    font-size: 14px;
+    padding: 10px;
+}
+.boothtitle {
+    font-size: 14px;
+}
+.boothsub {
+    font-size: 12px;
+}
